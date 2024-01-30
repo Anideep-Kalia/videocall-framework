@@ -2,6 +2,7 @@ const { Server } = require("socket.io");
 
 const io = new Server(8000, {
   cors: true,
+  host: '0.0.0.0'
 });
 
 const emailToSocketIdMap = new Map();
